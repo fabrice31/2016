@@ -3,6 +3,18 @@ layout: default
 title: Home
 ---
 
+<section class="speakers">
+  <h1>Orateurs</h1>
+
+  <p>On est allé les chercher pour vous :</p>
+
+  <ul>
+    {% for speaker in site.data.speakers %}
+    <li>{{ speaker[1].name }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section class="posts">
   {% for post in paginator.posts limit:1 %}
   <article class="post">
