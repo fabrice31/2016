@@ -10,7 +10,11 @@ title: Home
 
   <ul>
     {% for speaker in site.data.speakers %}
-    <li>{{ speaker[1].name }}</li>
+    <li>
+      <img class="avatar" src="{{ speaker[1].avatar }}" alt="">
+      <p><a href="{{ speaker[1].website }}">{{ speaker[1].name }}</a></p>
+      <p>{{ speaker[1].bio }}</p>
+    </li>
     {% endfor %}
   </ul>
 </section>
