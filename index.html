@@ -12,7 +12,13 @@ title: Home
     {% for speaker in site.data.speakers %}
     <li>
       <img class="avatar" src="{{ speaker[1].avatar }}" alt="">
-      <p><a href="{{ speaker[1].website }}">{{ speaker[1].name }}</a></p>
+      <div>
+      {% if speaker[1].website %}
+          <a href="{{ speaker[1].website }}">{{ speaker[1].name }}</a>
+      {% else %}
+          {{ speaker[1].name }}
+      {% endif %}
+      </div>
       <p>{{ speaker[1].bio }}</p>
     </li>
     {% endfor %}
