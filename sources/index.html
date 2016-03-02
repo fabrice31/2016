@@ -62,6 +62,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
 	<nav class="main-nav">
 		<div class="wrapper">
 			<a class="logo" href="#" title="Accueil">
@@ -93,20 +94,16 @@
 	<div class="cta-zone-1 section-margin">
 		<div class="wrapper">
 			<div class="grid-2 text-center">
-				<section class="text1">
+				<section>
 					<h2 class="cta-title">Une journée de conférences</h2>
-					<p>volontairement accessible à tous les métiers du web, pour sortir de votre zone de confort et confronter les points de vue.</p>
+					<p>volontairement accessible à tous les métiers du web, pour sortir de votre zone de confort et confronter les avis.</p>
+					<a class="cta button-type1" href="#">Je m'inscris</a>
 				</section>
-				<section class="text2">
+				<section>
 					<h2 class="cta-title">Des lieux pour s’immerger</h2>
 					<p>dans l’esprit de Sudweb, spécialement choisis pour leur emplacement, leur confort et l’esprit qu’ils dégagent.</p>
-				</section>
-				<div class="cta1">
-					<a class="cta button-type1" href="#">Je m'inscris</a>
-				</div>
-				<div class="cta2">
 					<a class="cta button-type1" href="#">Repérez les lieux</a>
-				</div>
+				</section>
 			</div>
 		</div>
 	</div>
@@ -116,10 +113,10 @@
 		<nav class="schedule-nav">
 			<div class="wrapper container">
 				<a href="#vendredi">
-					<time datetime="2016-05-27T09:00+2//2016-05-27T18:00+2">Vendredi 27 mai</time>
+					<time datetime="2016-05-27T09:00//2016-05-27T18:00">Vendredi 27 mai</time>
 					Les conférences</a>
 				<a href="#samedi">
-					<time datetime="2016-05-27T09:00+2//2016-05-27T18:00+2">Samedi 28 mai</time>
+					<time datetime="2016-05-27T09:00//2016-05-27T18:00">Samedi 28 mai</time>
 					Les élaboratoires</a>
 				<a href="#after">
 					Les soirées <br>et after
@@ -214,7 +211,7 @@
 										<img src="img/assets/2016/avatar.jpg" alt="Author name">
 									</figure>
 									<h5 class="author-name default-size">Bill Murray</h5>
-									<p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
+									<p class="author-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
 								</section>
 							</footer>
 						</section>
@@ -448,7 +445,7 @@
 			<div class="wrapper text-center">
 				<h2 class="great-title-size red uppercase">Nos partenaires de choc</h2>
 				<section class="gold-partners">
-					<h3 class="partners-title small-title-size uppercase yellow">Or</h3>
+					<h3 class="partners-title small-title-size uppercase gold">Or</h3>
 					<div class="partners-hr">
 						<div>
 							<svg class="sw-logo gold" viewBox="0 0 500 276.37">
@@ -472,7 +469,7 @@
 					</ul>
 				</section>
 				<section class="silver-partners">
-					<h3 class="partners-title small-title-size uppercase lightgrey">Argent</h3>
+					<h3 class="partners-title small-title-size uppercase silver">Argent</h3>
 					<div class="partners-hr">
 						<div>
 							<svg class="sw-logo silver" viewBox="0 0 500 276.37">
@@ -532,7 +529,7 @@
 					</ul>
 				</section>
 				<section class="bronze-partners">
-					<h3 class="partners-title small-title-size uppercase darkred">Bronze</h3>
+					<h3 class="partners-title small-title-size uppercase bronze">Bronze</h3>
 					<div class="partners-hr">
 						<div>
 							<svg class="sw-logo bronze" viewBox="0 0 500 276.37">
@@ -583,12 +580,13 @@
 					</section>
 					<section>
 						<h2 class="tiny-title-size uppercase">Who you gonna call?</h2>
-						<form class="newsletter-form">
-							<label for="i1">Inscrivez-vous à la newsletter</label>
-							<input type="text" id="i2" name="name">
+						<form action="//sudweb.us2.list-manage.com/subscribe/post?u=af19b58cf514c01eca3f7652e&amp;id=b579f5b507" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank" novalidate>
+							<label for="mce-EMAIL">Inscrivez-vous à la newsletter</label>
 							<div class="row">
-								<input type="email" id="i1" name="email">
-								<button type="submit" class="button uppercase">Ok</button>
+								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse mail" required>
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_af19b58cf514c01eca3f7652e_b579f5b507" tabindex="-1" value=""></div>
+								<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button uppercase">ok</button>
 							</div>
 						</form>
 						<ul class="social-links">
@@ -630,22 +628,6 @@
 	<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
 	<script src="js/main.min.js"></script>
-
-	<!-- Microdatas from schema.org -->
-	<script type="application/ld+json">
-		{
-			"@context" : "http://schema.org",
-			"@type" : "organization",
-			"name" : "SudWeb",
-			"url" : "http://sudweb.fr/",
-			"sameAs" : [
-				"https://twitter.com/SudWeb",
-				"https://www.facebook.com/SudWeb",
-				"http://lanyrd.com/series/sudweb/",
-				"https://www.flickr.com/sudweb"
-			]
-		}
-	</script>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<!--
